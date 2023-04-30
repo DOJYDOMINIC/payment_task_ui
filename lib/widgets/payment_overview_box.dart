@@ -18,8 +18,8 @@ class OverviewBox extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Container(
-      height: height/8.5,
-      width: width/2.4,
+      height: height*.13,
+      width: width*.43,
       decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(10)),

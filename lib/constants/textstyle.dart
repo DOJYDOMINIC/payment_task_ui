@@ -8,6 +8,7 @@ TextStyle whitetextbold = GoogleFonts.poppins(fontSize: 20,color:Color(0xfffffff
 TextStyle largtext = GoogleFonts.poppins(fontSize: 16,color:Color(0xff000000),fontWeight: FontWeight.w600);
 TextStyle largblacktext = GoogleFonts.poppins(fontSize: 16,color:Color(0xff000000));
 TextStyle mediumtext = GoogleFonts.poppins(fontSize: 14,color:Color(0xff616161));
+TextStyle listamtblue = GoogleFonts.poppins(fontSize: 14,color:Color(0xff0e70b9),fontWeight:FontWeight.w600);
 TextStyle mediumtext2 = GoogleFonts.poppins(fontSize: 14,color:Color(0xff616161));
 TextStyle normaltext = GoogleFonts.poppins(fontSize: 12,color:Color(0xff757575));
 TextStyle extrasmalltext = GoogleFonts.poppins(fontSize: 10,color:Color(0xff757575));

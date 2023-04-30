@@ -11,7 +11,8 @@ class Transaction extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+    return Column(
+        crossAxisAlignment: CrossAxisAlignment.start, children: [
       Text(
         TextLine.transaction,
         style: largtext,
@@ -56,33 +57,43 @@ class Transaction extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        height: 50,
-                        width:40,
-                        color:Colors.red
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      Row(
                         children: [
-                          Text('Order #1688068'),
-                          Text("Jul 12 2:06 PM")
+                          Container(
+                            height: 50,
+                            width:45,
+                            decoration: BoxDecoration(
+                                border: Border.all(color: ColorsApp.borderColor),
+                                image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: NetworkImage('https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80'))),
+                          ),
+                          SizedBox(width: 20,),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Order #1688068'),
+                              Text("Jul 12 2:06 PM",style: normaltext,)
+                            ],
+                          ),
                         ],
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          Text('799'),
+                          Text('₹ 799',style: listamtblue,),
                           Row(
                             children: [
                               CircleAvatar(radius: 5,backgroundColor: Colors.green,),
                               SizedBox(width: 5,),
-                              Text('Sucess'),
+                              Text('Sucessful',style:normaltext,),
                             ],
                           ),
                         ],
                       )
                     ],
                   ),
+                  SizedBox(height: 5,),
                   Text('799 deposited to 5886847411544',style: extrasmalltext,)
                 ],
               ),

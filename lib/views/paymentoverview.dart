@@ -16,7 +16,7 @@ class PaymentOverview extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Container(
-    height: height*.2,
+    height: height*.19,
       width: width,
       child:Column(
         children: [
