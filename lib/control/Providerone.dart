@@ -2,6 +2,8 @@
 import 'package:flutter/widgets.dart';
 
 class ProviderOne extends ChangeNotifier{
+
+
   final int _total = 50000;
   int _used = 10000;
 

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:payment_task_ui/constants/textstyle.dart';
 import '../constants/colorss.dart';
 
 class ReusableButton extends StatelessWidget {
-  const ReusableButton({Key? key,
-  required this.onTap, required this.text, required this.borderRadius, this.color = ColorsApp.blue,
+  const ReusableButton({Key? key,this.onTap, required this.text, required this.borderRadius, this.color = ColorsApp.blue,
   }) :super(key: key);
 
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
   final String text;
   final double borderRadius;
   final Color color;
@@ -21,7 +21,7 @@ class ReusableButton extends StatelessWidget {
           color: color,
           borderRadius: BorderRadius.all(Radius.circular(borderRadius)),
         ),
-        child: Text(text,style:Theme.of(context).textTheme.bodyMedium,),
+        child: Text(text,style:buttonwhitetext),
       ),
     );
   }

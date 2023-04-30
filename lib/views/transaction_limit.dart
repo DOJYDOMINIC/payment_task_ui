@@ -17,10 +17,10 @@ class TransactionLimit extends StatelessWidget {
 
     return Container(
       height: height * 0.27,
-      width: width * 9,
+      width: width,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
-          border: Border.all(color: ColorsApp.borderColor)),
+          border: Border.all( width: 2,color: ColorsApp.borderColor)),
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Column(
@@ -49,7 +49,7 @@ class TransactionLimit extends StatelessWidget {
             ReusableButton(
                 onTap: () {
                   providerone.Add();
-                }, text: TextLine.increaselimit, borderRadius: 5),
+                }, text: TextLine.increaselimit, borderRadius: 5,),
           ],
         ),
       ),
